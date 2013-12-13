@@ -1,0 +1,21 @@
+Description: Generic Applications
+Name: generic-applications
+Packages:
+- GhostCluster
+- Settings
+- MediaPlayer
+- ca-certificates
+- ca-certificates-mozilla
+- festival
+- ico-uxf-homescreen
+- ico-uxf-device-input-controller
+- ico-uxf-utilities
+- ico-uxf-weston-plugin
+- ico-vic-amb-plugin
+- ico-vic-carsimulator
+- pocketsphinx
+- saythis
+- settingsd
+- sphinxbase
+- webkit2-efl-test
+Summary: Generic Applications

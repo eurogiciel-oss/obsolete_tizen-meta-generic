@@ -1,0 +1,3 @@
+generic-mbr partition file is for images using "legacy" mbr partitioning scheme.
+
+These files are referenced in the respective image ks files to set the partitioning accordingly

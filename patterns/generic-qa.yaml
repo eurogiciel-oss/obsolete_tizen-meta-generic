@@ -1,0 +1,16 @@
+Description: Generic QA Tools
+Name: generic-qa
+Packages:
+- bluez-test
+- connman-test
+- dbus-python
+- dlogutil
+- eet-tools
+- gdb
+- gstreamer-utils
+- neard-test
+- ofono-test
+- python-xml
+- wget
+- zypper
+Summary: Generic QA Tools

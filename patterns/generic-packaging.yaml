@@ -1,0 +1,5 @@
+Description: Generic Packaging
+Name: generic-packaging
+Packages:
+- zypper
+Summary: Generic Packaging

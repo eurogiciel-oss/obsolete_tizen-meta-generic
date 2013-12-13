@@ -1,0 +1,2 @@
+# Needed to fix TIVI-1629
+vconftool set -t int -f db/setting/default_memory/wap 0

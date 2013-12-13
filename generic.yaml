@@ -1,0 +1,56 @@
+Default:
+    Baseline: tizen-3.0
+    Active: True
+    Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
+    Architecture: ia32
+    Part: generic-mbr
+    Language: en_US.UTF-8
+    Keyboard: us
+    Timezone: America/Los_Angeles
+    RootPass: tizen
+    DefaultUser: tizen
+    DefaultUserPass: tizen
+    BootLoader: True
+    BootloaderAppend: "rootwait rootfstype=ext4 quiet"
+    BootloaderTimeout: 0
+    BootloaderOptions: "--ptable=gpt"
+    StartX: False
+    Desktop: None
+    Repos:
+        - Generic     
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Base System
+        - Generic Adaptation
+        - Generic Packaging
+    PostScripts:
+        - base-general
+        - rpm
+    NoChrootScripts:
+        - buildname  
+
+Wayland-i586:
+    Part: generic-mbr
+    UserGroups: "audio,video,weston-launch"
+    Groups:
+        - Generic Middleware
+        - Wayland
+        - Console Tools
+        - Generic Applications
+    PostScripts:
+        - base-weston-default
+        - vconf-keys-default
+
+
+Wayland-x86_64:
+    Part: generic-mbr
+    UserGroups: "audio,video,weston-launch"
+    Groups:
+        - Generic Middleware x86_64
+        - Wayland
+        - Console Tools
+        - Generic Applications x86_64
+    PostScripts:
+        - base-weston-default
+        - vconf-keys-default
