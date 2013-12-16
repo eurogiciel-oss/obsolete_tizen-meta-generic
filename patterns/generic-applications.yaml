@@ -1,14 +1,7 @@
 Description: Generic Applications
 Name: generic-applications
 Packages:
-- GhostCluster
-- Settings
-- MediaPlayer
 - ca-certificates
 - ca-certificates-mozilla
-- pocketsphinx
-- saythis
-- settingsd
-- sphinxbase
 - webkit2-efl-test
 Summary: Generic Applications
