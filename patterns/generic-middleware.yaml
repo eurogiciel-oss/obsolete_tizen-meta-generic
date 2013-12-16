@@ -1,5 +1,5 @@
 Description: Generic Middleware
-Name: geneic-middleware
+Name: generic-middleware
 Packages:
 - alsa-utils
 - automotive-message-broker

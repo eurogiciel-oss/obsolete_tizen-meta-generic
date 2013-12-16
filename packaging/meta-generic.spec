@@ -1,3 +1,5 @@
+%define profile generic
+
 Summary:	Generic Meta Data
 Name:		meta-generic
 Version:	001
@@ -23,8 +25,8 @@ make
 
 
 %files
-%attr(644,-,-) %{_datadir}/package-groups/generic/*.yaml
-%{_datadir}/image-configurations/generic/*.yaml
-%{_datadir}/image-configurations/generic/configs/*.yaml
-%{_datadir}/image-configurations/generic/partitions
-%{_datadir}/image-configurations/generic/scripts
+%attr(644,-,-) %{_datadir}/package-groups/%{profile}/*.yaml
+%{_datadir}/image-configurations/%{profile}/*.yaml
+%{_datadir}/image-configurations/%{profile}/configs/*.yaml
+%{_datadir}/image-configurations/%{profile}/partitions
+%{_datadir}/image-configurations/%{profile}/scripts
