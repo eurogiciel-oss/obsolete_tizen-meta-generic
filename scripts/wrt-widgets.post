@@ -1,0 +1,6 @@
+######################################## START WRT WIDGETS PREINSTALL ####################
+
+prepare_widgets.sh
+install_widgets.sh
+
+######################################## END WRT WIDGETS PREINSTALL ####################

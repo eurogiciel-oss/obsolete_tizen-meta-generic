@@ -1,0 +1,9 @@
+Description: Generic Adaptation
+Name: generic-adaptation
+Packages:
+- GhostCluster
+- desktop-skin
+- linux-firmware
+- xf86-input-synaptics
+- xf86-video-intel
+- xf86-input-keyboard- wrt-widgets

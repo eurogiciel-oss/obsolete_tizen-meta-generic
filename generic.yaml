@@ -23,9 +23,13 @@ Default:
     Groups:
         - Base System
         - Generic Packaging
+        - Generic Adaptation
     PostScripts:
         - base-general
         - rpm
+        - base-weston-default
+        - wrt-widgets.post
+        - vconf-keys-default 
     NoChrootScripts:
         - buildname  
 
@@ -38,18 +42,15 @@ Wayland-i586:
         - Console Tools
         - Generic Applications
     PostScripts:
-        - base-weston-default
-        - vconf-keys-default
-
+        - optimization
 
 Wayland-x86_64:
     Part: generic-mbr
     UserGroups: "audio,video,weston-launch"
     Groups:
-        - Generic Middleware x86_64
+        - Generic Middleware
         - Wayland
         - Console Tools
-        - Generic Applications x86_64
+        - Generic Applications
     PostScripts:
-        - base-weston-default
-        - vconf-keys-default
+        - optimization
