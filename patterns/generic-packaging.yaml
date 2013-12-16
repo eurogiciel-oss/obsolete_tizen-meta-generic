@@ -1,5 +1,6 @@
 Description: Generic Packaging
 Name: generic-packaging
 Packages:
+- gpg2
 - zypper
 Summary: Generic Packaging
