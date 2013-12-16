@@ -22,7 +22,6 @@ Default:
     UserGroups: "audio,video"
     Groups:
         - Base System
-        - Generic Adaptation
         - Generic Packaging
     PostScripts:
         - base-general
