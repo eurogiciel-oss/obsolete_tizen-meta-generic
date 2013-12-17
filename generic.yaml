@@ -11,9 +11,9 @@ Default:
     DefaultUser: tizen
     DefaultUserPass: tizen
     BootLoader: True
-    BootloaderAppend: "rootwait rootfstype=ext4 quiet"
-    BootloaderTimeout: 0
-    BootloaderOptions: "--ptable=gpt"
+    BootloaderAppend: "rootwait rootfstype=ext4 quiet rw vga=current"
+    BootloaderTimeout: 3
+    BootloaderOptions: '--ptable=gpt  --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
     StartX: False
     Desktop: None
     Repos:

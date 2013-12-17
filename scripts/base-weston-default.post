@@ -42,3 +42,8 @@ cp /etc/sysconfig/wrt /etc/sysconfig/launchpad
 cat > /etc/udev/rules.d/99-dri.rules <<EOF
 SUBSYSTEM=="drm", MODE="0666"
 EOF
+
+# sdx: user 'app' must own /dev/tty1 for weston to start correctly
+cat >/usr/lib/udev/rules.d/99-tty.rules <<EOF
+SUBSYSTEM=="tty", KERNEL=="tty1", GROUP="app", OWNER="app"
+EOF
