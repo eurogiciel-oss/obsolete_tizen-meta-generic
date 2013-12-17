@@ -1,20 +1,16 @@
 Repositories:
     -   Name: generic
-        Url:  http://download.tizen.org/live/Tizen:/Generic/x86_64-wayland/
+        Url:  http://obs:82/Tizen:/generic:/devel/wayland_x86_64/
         Options: --ssl_verify=no
         
     -   Name: generic-wayland_i586
-        Url:  http://download.tizen.org/live/Tizen:/Generic/ia32-wayland/
+        Url:  http://obs:82/Tizen:/generic:/devel/wayland_i586/
         Options: --ssl_verify=no
         
     -   Name: generic-wayland_x86_64
-        Url:  http://download.tizen.org/live/Tizen:/Generic/x86_64-wayland/
+        Url:  http://obs:82/Tizen:/generic:/devel/wayland_x86_64/
         Options: --ssl_verify=no
         
     -   Name: generic-x11_i586
-        Url:  http://download.tizen.org/live/Tizen:/Generic/ia32-x11/
-        Options: --ssl_verify=no
-        
-    -   Name: generic-x11_x86_64
-        Url:  http://download.tizen.org/live/Tizen:/Generic/x86_64-x11/
+        Url:  http://obs:82/Tizen:/generic:/devel/x11_i586/
         Options: --ssl_verify=no
