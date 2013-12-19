@@ -1,0 +1,5 @@
+# buildname.nochroot 
+if [ -n "$IMG_NAME" ]; then
+    echo "BUILD_ID=$IMG_NAME" >> $INSTALL_ROOT/etc/tizen-release
+    echo "BUILD_ID=$IMG_NAME" >> $INSTALL_ROOT/etc/os-release
+fi
