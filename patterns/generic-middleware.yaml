@@ -24,6 +24,7 @@ Packages:
 - gst-plugins-good
 - gstreamer
 - gstreamer-vaapi
+- gstreamer-utils
 - iptables
 - libprivilege-control-conf
 - libva-intel-driver
@@ -42,6 +43,7 @@ Packages:
 - pulseaudio-module-bluetooth
 - pulseaudio-utils
 - rfkill
+- sqlite3
 - tree
 - vaapi-tools
 - wpa_supplicant
@@ -56,5 +58,6 @@ Packages:
 - wrt-installer-preinstall-service
 - wrt-plugins-tizen
 - wrt-security
+- wrt-widgets
 - zypper
 Summary: Generic Middleware

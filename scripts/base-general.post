@@ -1,4 +1,4 @@
-# base-general.post
+################ base-general.post ##################
 
 ln -sf /proc/self/mounts /etc/mtab
 

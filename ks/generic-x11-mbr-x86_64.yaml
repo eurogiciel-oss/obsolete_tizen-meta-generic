@@ -1,0 +1,9 @@
+Name: Generic X11 MBR x86_64
+Schedule: "*"
+Active: True
+Platform: X11
+Part: generic-mbr
+FileName: generic-x11-mbr-x86_64
+Kernel: kernel-x86-generic
+Repos:
+    - generic-x11_x86_64

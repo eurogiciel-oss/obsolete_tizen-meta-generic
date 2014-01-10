@@ -1,7 +1,7 @@
 Description: Generic Applications
 Name: generic-applications
 Packages:
+- ail
 - ca-certificates
-- ca-certificates-mozilla
 - webkit2-efl-test
 Summary: Generic Applications

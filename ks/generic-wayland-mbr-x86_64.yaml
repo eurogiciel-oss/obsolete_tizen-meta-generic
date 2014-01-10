@@ -1,9 +1,9 @@
-Name: Generic MBR 86_x64
+Name: Generic Wayland MBR x86_64
 Schedule: "*"
 Active: True
-Platform: Wayland-i586
+Platform: Wayland
 Part: generic-mbr
-FileName: generic-mbr-i586
+FileName: generic-wayland-mbr-x86_64
 Kernel: kernel-x86-generic
 Repos:
     - generic-wayland_x86_64
