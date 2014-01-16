@@ -51,6 +51,12 @@ EOF
 
 ############
 
+# sdx: add ELM theme in weston.sh
+cat >>/etc/profile.d/weston.sh <<'EOF'
+# sdx: patch commfrom meta-generic/scripts/base-weston-default.post
+export ELM_THEME=tizen-HD-light
+EOF
+  
 # sdx: set DBUS env inside weston shell (login shell)
 cat >/etc/profile.d/user-dbus.sh <<'EOF'
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
