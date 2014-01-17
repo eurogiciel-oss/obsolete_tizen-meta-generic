@@ -1,6 +1,4 @@
 #################### base-weston-default.post ##################
-# to be synced with profile/ivi/meta-ivi/scripts/base-weston-default.post
-
 # Initialize the native application database
 pkg_initdb
 
@@ -26,7 +24,7 @@ ln -sf weston.target  /usr/lib/systemd/user/default.target
 #touch /var/lib/systemd/linger/app
 
 # Add over-riding environment to enable the web runtime to
-# run on an IVI image as a different user then the tizen user
+# run as a different user than the tizen user
 # Some notes on some of the variables:
 #  - ELM_THEME is needed in order for the wrt to have visible content
 #  - WRT_PROCESS_POOL_DISABLE is a work around for TIVI-2062
