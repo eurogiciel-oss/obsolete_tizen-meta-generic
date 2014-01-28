@@ -13,4 +13,7 @@ Packages:
 - python-xml
 - wget
 - zypper
+- eat-device
+- python-requests
+- testkit-lite
 Summary: Generic QA Tools
