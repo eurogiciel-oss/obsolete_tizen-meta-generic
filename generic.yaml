@@ -1,6 +1,7 @@
 Default:
     Baseline: tizen-3.0
     Active: True
+    Architecture: ia32
     Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
     Part: generic-mbr
     Language: en_US.UTF-8
