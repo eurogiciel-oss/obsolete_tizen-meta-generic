@@ -29,6 +29,7 @@ Packages:
 - libprivilege-control-conf
 - libva-intel-driver
 - media-data-sdk
+- model-config-generic
 - neard
 - neardal  
 - net-config
