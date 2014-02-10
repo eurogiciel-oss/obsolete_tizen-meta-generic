@@ -35,6 +35,13 @@ Default:
 Minimal:
     Part: generic-mbr
 
+Minimal_QA:
+    Part: generic-mbr
+    Groups:
+        - Generic Automated QA Tools
+    PostScripts:
+        - autoqa
+
 Wayland:
     Part: generic-mbr
     UserGroups: "audio,video,weston-launch"
@@ -48,6 +55,21 @@ Wayland:
         - wrt-widgets
         - vconf-keys-default
 
+Wayland_QA:
+    Part: generic-mbr
+    UserGroups: "audio,video,weston-launch"
+    Groups:
+        - Generic Wayland
+        - Generic Adaptation
+        - Generic Middleware
+        - Generic Applications
+        - Generic Automated QA Tools
+    PostScripts:
+        - base-weston-default
+        - wrt-widgets
+        - vconf-keys-default
+        - autoqa
+
 X11:
     Part: generic-mbr
     Groups:
@@ -59,4 +81,18 @@ X11:
         - base-x11-default
         - wrt-widgets
         - vconf-keys-default
+
+X11_QA:
+    Part: generic-mbr
+    Groups:
+        - Generic X11
+        - Generic Adaptation
+        - Generic Middleware
+        - Generic Applications
+        - Generic Automated QA Tools
+    PostScripts:
+        - base-x11-default
+        - wrt-widgets
+        - vconf-keys-default
+        - autoqa
 
