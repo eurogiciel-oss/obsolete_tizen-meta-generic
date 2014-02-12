@@ -2,4 +2,6 @@ Description: Generic Automated QA Tools
 Name: generic-autoqa
 Packages:
 - testkit-lite
+- screen
+- which
 Summary: Generic Automated QA Tools
