@@ -1,0 +1,17 @@
+Description: Generic Base System
+Name: base micro
+Packages:
+- bluez
+- kmod
+- tzdata
+- pam
+- setup
+- filesystem
+- systemd
+- busybox
+- default-ac-domains
+- tizen-release
+- glibc-locale
+- pciutils
+- lrzsz
+Summary: Base System

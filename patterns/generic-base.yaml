@@ -1,0 +1,28 @@
+Description: Generic Base System
+Name: base
+Packages:
+- e2fsprogs
+- util-linux
+- kmod-compat
+- kmod
+- tzdata
+- pwdutils
+- pam
+- setup
+- filesystem
+- systemd
+- bash
+- coreutils
+- rpm
+- rpm-security-plugin
+- default-ac-domains
+- tizen-release
+- procps
+- psmisc
+- net-tools
+- kbd
+- glibc-locale
+- pciutils
+- connman
+- wpa_supplicant
+Summary: Base System

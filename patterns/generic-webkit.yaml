@@ -1,0 +1,12 @@
+Description: Generic Webkit
+Name: webkit
+Packages:
+- wrt-widgets
+- wrt
+- wrt-commons
+- wrt-installer
+- wrt-installer-preinstall-service
+- wrt-plugins-tizen
+- wrt-security
+- webkit2-efl-test
+Summary: Base System
