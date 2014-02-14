@@ -29,7 +29,7 @@ Packages:
 - libva-intel-driver
 - media-data-sdk
 - neard
-- neardal  
+- neardal
 - net-config
 - obexd
 - ofono
@@ -50,11 +50,5 @@ Packages:
 - web-ui-fw-theme-default
 - web-ui-fw-theme-tizen-black
 - web-ui-fw-theme-tizen-white
-- wrt
-- wrt-commons
-- wrt-installer
-- wrt-installer-preinstall-service
-- wrt-plugins-tizen
-- wrt-security
 - zypper
 Summary: Generic Middleware

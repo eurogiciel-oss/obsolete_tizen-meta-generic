@@ -3,5 +3,4 @@ Name: generic-applications
 Packages:
 - ca-certificates
 - ca-certificates-mozilla
-- webkit2-efl-test
 Summary: Generic Applications
