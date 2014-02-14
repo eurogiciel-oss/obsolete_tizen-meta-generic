@@ -1,3 +1,4 @@
+#################### base-weston-default.post ##################
 # Initialize the native application database
 pkg_initdb
 
@@ -12,16 +13,18 @@ chown -R app:app /opt/home/app
 # home dir must have the same label
 chsmack -a User /opt/home/app
 
-# base-weston-default.post
+# Enable a logind session for 'app' user on seat0 (the default seat for
+# graphical sessions)
 mkdir -p /usr/lib/systemd/system/graphical.target.wants
+ln -s ../user-session-launch@.service /usr/lib/systemd/system/graphical.target.wants/user-session-launch@seat0-5000.service
 ln -sf weston.target  /usr/lib/systemd/user/default.target
 
 # Enable user@5000.service by setting the linger for user 'app'
-mkdir -p /var/lib/systemd/linger
-touch /var/lib/systemd/linger/app
+#mkdir -p /var/lib/systemd/linger
+#touch /var/lib/systemd/linger/app
 
 # Add over-riding environment to enable the web runtime to
-# run on an IVI image as a different user then the tizen user
+# run as a different user than the tizen user
 # Some notes on some of the variables:
 #  - ELM_THEME is needed in order for the wrt to have visible content
 #  - WRT_PROCESS_POOL_DISABLE is a work around for TIVI-2062
@@ -37,13 +40,33 @@ EOF
 # Use the same over-rides for the native prelaunch daemon
 cp /etc/sysconfig/wrt /etc/sysconfig/launchpad
 
+# sdx: for AMD (ac.service)
+#cp /etc/sysconfig/wrt /etc/sysconfig/prelaunch
+
 # Add a rule to ensure the app user has permissions to
 # open the graphics device
 cat > /etc/udev/rules.d/99-dri.rules <<EOF
 SUBSYSTEM=="drm", MODE="0666"
 EOF
 
+############
+
+# sdx: add ELM theme in weston.sh
+cat >>/etc/profile.d/weston.sh <<'EOF'
+# sdx: patch commfrom meta-generic/scripts/base-weston-default.post
+export ELM_THEME=tizen-HD-light
+EOF
+  
+# sdx: set DBUS env inside weston shell (login shell)
+cat >/etc/profile.d/user-dbus.sh <<'EOF'
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
+EOF
+
 # sdx: user 'app' must own /dev/tty1 for weston to start correctly
 cat >/usr/lib/udev/rules.d/99-tty.rules <<EOF
 SUBSYSTEM=="tty", KERNEL=="tty1", GROUP="app", OWNER="app"
 EOF
+
+# sdx: fix smack labels on /var/log
+chsmack -a '*' /var/log
+

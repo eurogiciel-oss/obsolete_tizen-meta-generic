@@ -1,0 +1,5 @@
+###################### base-x11-default.post ###################
+
+# enable X11 forwarding on ssh
+echo "X11Forwarding yes" >>/etc/ssh/sshd_config
+echo "AddressFamily inet" >>/etc/ssh/sshd_config

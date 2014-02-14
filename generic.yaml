@@ -1,8 +1,8 @@
 Default:
     Baseline: tizen-3.0
     Active: True
-    Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
     Architecture: ia32
+    Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
     Part: generic-mbr
     Language: en_US.UTF-8
     Keyboard: us
@@ -11,9 +11,9 @@ Default:
     DefaultUser: tizen
     DefaultUserPass: tizen
     BootLoader: True
-    BootloaderAppend: "rootwait rootfstype=ext4 quiet rw vga=current"
+    BootloaderAppend: "rw vga=current splash rootwait rootfstype=ext4 plymouth.enable=0"
     BootloaderTimeout: 3
-    BootloaderOptions: '--ptable=gpt  --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
+    BootloaderOptions: '--ptable=gpt --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
     StartX: False
     Desktop: None
     Repos:
@@ -22,35 +22,77 @@ Default:
     UserGroups: "audio,video"
     Groups:
         - Base System
+        - Console Tools
         - Generic Packaging
-        - Generic Adaptation
     PostScripts:
         - base-general
         - rpm
-        - base-weston-default
-        - wrt-widgets.post
-        - vconf-keys-default 
+        - optimization
+        - customize
     NoChrootScripts:
         - buildname  
 
-Wayland-i586:
+Minimal:
     Part: generic-mbr
-    UserGroups: "audio,video,weston-launch"
-    Groups:
-        - Generic Middleware
-        - Wayland
-        - Console Tools
-        - Generic Applications
-    PostScripts:
-        - optimization
 
-Wayland-x86_64:
+Minimal_QA:
+    Part: generic-mbr
+    Groups:
+        - Generic Automated QA Tools
+    PostScripts:
+        - autoqa
+
+Wayland:
     Part: generic-mbr
     UserGroups: "audio,video,weston-launch"
     Groups:
+        - Generic Wayland
+        - Generic Adaptation
         - Generic Middleware
-        - Wayland
-        - Console Tools
         - Generic Applications
     PostScripts:
-        - optimization
+        - base-weston-default
+        - wrt-widgets
+        - vconf-keys-default
+
+Wayland_QA:
+    Part: generic-mbr
+    UserGroups: "audio,video,weston-launch"
+    Groups:
+        - Generic Wayland
+        - Generic Adaptation
+        - Generic Middleware
+        - Generic Applications
+        - Generic Automated QA Tools
+    PostScripts:
+        - base-weston-default
+        - wrt-widgets
+        - vconf-keys-default
+        - autoqa
+
+X11:
+    Part: generic-mbr
+    Groups:
+        - Generic X11
+        - Generic Adaptation
+        - Generic Middleware
+        - Generic Applications
+    PostScripts:
+        - base-x11-default
+        - wrt-widgets
+        - vconf-keys-default
+
+X11_QA:
+    Part: generic-mbr
+    Groups:
+        - Generic X11
+        - Generic Adaptation
+        - Generic Middleware
+        - Generic Applications
+        - Generic Automated QA Tools
+    PostScripts:
+        - base-x11-default
+        - wrt-widgets
+        - vconf-keys-default
+        - autoqa
+

@@ -1,0 +1,8 @@
+Description: Generic X11
+Name: generic-x11
+Packages:
+- xorg-server
+- xf86-input-synaptics
+- xf86-video-intel
+- xf86-input-keyboard
+Summary: Generic X11
