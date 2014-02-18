@@ -1,0 +1,7 @@
+Description: Generic Desktop Applications
+Name: generic-desktop-applications
+Packages:
+- emotion
+- econnman
+- bluetooth-agent
+Summary: Generic Desktop Applications

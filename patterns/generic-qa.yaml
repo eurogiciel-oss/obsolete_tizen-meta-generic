@@ -12,5 +12,4 @@ Packages:
 - ofono-test
 - python-xml
 - wget
-- zypper
 Summary: Generic QA Tools

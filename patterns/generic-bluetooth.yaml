@@ -1,0 +1,8 @@
+Description: Generic Bluetooth
+Name: generic-bluetooth
+Packages:
+- bluez
+- bluetooth-frwk
+- bluetooth-share
+- bluetooth-tools-no-firmware
+Summary: Generic Bluetooth

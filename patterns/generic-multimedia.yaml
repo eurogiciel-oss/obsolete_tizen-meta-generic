@@ -1,0 +1,20 @@
+Description: Generic Multimedia
+Name: generic-multimedia
+Packages:
+- alsa-utils
+- alsa-plugins-pulse
+- pulseaudio
+- pulseaudio-config
+- pulseaudio-locale
+- pulseaudio-module-bluetooth
+- pulseaudio-utils
+- gst-libav
+- gst-plugins-bad
+- gst-plugins-base
+- gst-plugins-good
+- gstreamer
+- gstreamer-vaapi
+- gstreamer-utils
+- libva-intel-driver
+- vaapi-tools
+Summary: Generic Multimedia

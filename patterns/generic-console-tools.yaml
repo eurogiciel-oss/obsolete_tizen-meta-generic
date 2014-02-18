@@ -1,0 +1,30 @@
+Description: Generic Console Tools
+Name: generic-console-tools
+Packages:
+- snapper-zypp-plugin
+- tar
+- wget
+- grep
+- gzip
+- openssh
+- rsync
+- parted
+- zip
+- vim
+- unzip
+- less
+- xz
+- nano
+- curl
+- strace
+- diffutils
+- patch
+- findutils
+- wdiff
+- powertop
+- sudo
+- ca-certificates-mozilla
+- iptables
+- net-config
+- tree
+Summary: Generic Console Tools

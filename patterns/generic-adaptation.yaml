@@ -1,6 +1,5 @@
 Description: Generic Adaptation
 Name: generic-adaptation
 Packages:
-- desktop-skin
 - linux-firmware
 Summary: Generic Adaptation

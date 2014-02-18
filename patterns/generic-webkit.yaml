@@ -9,4 +9,9 @@ Packages:
 - wrt-plugins-tizen
 - wrt-security
 - webkit2-efl-test
+- web-ui-fw
+- web-ui-fw-demo-tizen-winsets
+- web-ui-fw-theme-default
+- web-ui-fw-theme-tizen-black
+- web-ui-fw-theme-tizen-white
 Summary: Base System
